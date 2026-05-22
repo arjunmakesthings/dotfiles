@@ -11,7 +11,7 @@ mine is set up in the following way:
 
 ---
 
-copy pasting the atlassian article, just in case the post is subject to link-rot.
+### copy pasting the atlassian article linked above, just in case it link-rots:
 
 Dotfiles: Best way to store in a bare git repository
 Disclaimer: the title is slightly hyperbolic, there are other proven solutions to the problem. I do think the technique below is very elegant though.
@@ -113,3 +113,5 @@ For completeness this is what I ended up with (tested on many freshly minted Alp
 12fi;
 13config checkout
 14config config status.showUntrackedFiles no
+
+---
