@@ -30,6 +30,9 @@ call vundle#begin()
 
 	"for vundle; github: 
 	Plugin 'tpope/vim-fugitive'
+
+	"auto match brackets: 
+	Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 
 "re-enable filtype & load filetype-specific plugins.
@@ -72,7 +75,8 @@ set lbr
 "preserve indentation when pressing return:
 set smartindent
 "don't copy comments: 
-:set formatoptions-=cro
+"autocmd FileType * setlocal formatoptions-=cro
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 "keybindings:
 ""for nerdtree:
