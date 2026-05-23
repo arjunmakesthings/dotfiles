@@ -24,6 +24,12 @@ call vundle#begin()
 
 	"for glsl:
 	Plugin 'tikhomirov/vim-glsl'
+
+	"for status-bar (airline):
+	Plugin 'vim-airline/vim-airline'
+
+	"for vundle; github: 
+	Plugin 'tpope/vim-fugitive'
 call vundle#end()
 
 "re-enable filtype & load filetype-specific plugins.
@@ -35,6 +41,21 @@ set number
 
 "always show status line, even if it's one window.
 set laststatus=2
+
+"airline / status bar: 
+"change defaults to none:
+let g:airline_extensions = []
+"a is mode.
+let g:airline_section_a = '%{airline#parts#mode()}'
+"show file + absolute path, readonly or not:  
+let g:airline_section_b = '%F %r'
+"show git stuff & whether the file is modified or not:
+let g:airline_section_c = '%m %{airline#extensions#branch#get_head()}'
+let g:airline_section_x = ''
+"show type of file being edited.
+let g:airline_section_y = '%y'
+"show line / total lines:
+let g:airline_section_z = '%l/%L'
 
 "colorscheme:
 colorscheme nord
@@ -50,6 +71,8 @@ set formatoptions=l
 set lbr
 "preserve indentation when pressing return:
 set smartindent
+"don't copy comments: 
+:set formatoptions-=cro
 
 "keybindings:
 ""for nerdtree:
