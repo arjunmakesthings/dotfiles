@@ -33,6 +33,9 @@ call vundle#begin()
 
 	"auto match brackets: 
 	Plugin 'jiangmiao/auto-pairs'
+
+	"tidal cycles: 
+	Plugin 'tidalcycles/vim-tidal'
 call vundle#end()
 
 "re-enable filtype & load filetype-specific plugins.
@@ -84,3 +87,6 @@ inoremap<c-b> <Esc>:NERDTreeToggle<cr>
 nnoremap<c-b> <Esc>:NERDTreeToggle<cr>
 "if you don't want to use nerdtree:
 "nnoremap<c-b> <Esc>:Lex<cr>:vertical resize 30<cr>
+
+"specific software:
+
