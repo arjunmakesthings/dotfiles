@@ -1,6 +1,9 @@
 "turn off old compatibility with vi.
 set nocompatible
 
+"turn off auto swap file creation. 
+set noswapfile
+
 "temporarily disable filetype detection so that plugins load. 
 filetype off
 
@@ -44,6 +47,9 @@ filetype plugin indent on
 "ui:
 syntax on
 set number
+
+"nerdtree: 
+let NERDTreeShowBookmarks=1
 
 "always show status line, even if it's one window.
 set laststatus=2
