@@ -37,6 +37,10 @@ call vundle#begin()
 	"auto match brackets: 
 	Plugin 'jiangmiao/auto-pairs'
 
+	"auto-match for html: 
+	"https://github.com/alvan/vim-closetag
+	Plugin 'alvan/vim-closetag'
+
 	"tidal cycles: 
 	Plugin 'tidalcycles/vim-tidal'
 call vundle#end()
@@ -94,5 +98,6 @@ nnoremap<c-b> <Esc>:NERDTreeToggle<cr>
 "if you don't want to use nerdtree:
 "nnoremap<c-b> <Esc>:Lex<cr>:vertical resize 30<cr>
 
-"specific software:
-
+"specific language support:
+"html:
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
