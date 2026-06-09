@@ -26,5 +26,14 @@ export PATH="/Users/a/.local/bin:$PATH"
 source ${HOME}/.ghcup/env
 export PATH="/Applications/SuperCollider.app/Contents/MacOS:$PATH"
 
+# aliases: 
 # for dotfiles repo, so that i can call git commands with dotfile ...:
 alias dotfiles='/usr/bin/git --git-dir=/Users/a/.dotfiles --work-tree=/Users/a'
+
+#python: 
+alias python='python3'
+
+#show files when changing cd:
+cc() {
+    cd "$@" && ls -a
+}
