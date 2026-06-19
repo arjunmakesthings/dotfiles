@@ -37,3 +37,6 @@ alias python='python3'
 cc() {
     cd "$@" && ls -a
 }
+
+#show tree inside a directory:
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
