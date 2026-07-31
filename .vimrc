@@ -4,6 +4,9 @@ set nocompatible
 "turn off auto swap file creation. 
 set noswapfile
 
+"turn on mouse support:
+set mouse=a
+
 "temporarily disable filetype detection so that plugins load. 
 filetype off
 
@@ -18,6 +21,8 @@ call vundle#begin()
 	"load prettier:
 	"packloadall
 	Plugin 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+
+	Plugin 'vim-autoformat/vim-autoformat'
 
 	"nerdtree is my file explorer.
 	Plugin 'preservim/nerdtree'
