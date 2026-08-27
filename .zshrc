@@ -40,3 +40,7 @@ cc() {
 
 #show tree inside a directory:
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+#aliases: 
+alias la="ls -a"
