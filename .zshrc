@@ -44,3 +44,13 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 #aliases: 
 alias la="ls -a"
+
+#for und-net:
+alias ssh-undnet="ssh non-root@167.99.147.44"
+alias droplet-ip="echo '167.99.147.44' "
+
+#for raspberry pi: 
+alias ssh-pi="ssh -i /Users/a/data/raspberry-pi/pi-key a@10.23.10.89"
+alias pi-ip="echo '10.23.10.89'"
+
+alias itp="cd ~/data/itp/sem-3 && ls -a"
